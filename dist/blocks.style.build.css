@@ -1,1 +1,89 @@
-.wp-block-cgb-block-cgb{color:#292929;background:#ff4500;border:0.2rem solid #292929;padding:2rem}
+@charset "UTF-8";
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.profile-box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-align: center;
+      align-items: center;
+  font-family: "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif; }
+  .profile-box__image {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 74%;
+    height: 360px;
+    background-color: #f1f1f1;
+    border: 1px solid #eee; }
+    .profile-box__image > img {
+      width: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .profile-box__texts {
+    width: 48%;
+    margin-right: -14%;
+    padding: 40px 50px;
+    background-color: #fff;
+    border: 1px solid #f9a156;
+    position: relative;
+    z-index: 1; }
+  .profile-box__button {
+    margin-top: -30px; }
+  .profile-box__year {
+    width: 140px;
+    font-size: 12px;
+    /*font-weight: bold;*/ }
+  .profile-box__name {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    margin-bottom: 4px; }
+  .profile-box__name-jp {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: .05em; }
+  .profile-box__name-eng {
+    display: inline-block;
+    color: #9F9F92;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: .1em; }
+  .profile-box__title {
+    width: 200px;
+    font-size: 12px;
+    font-weight: bold; }
+  .profile-box__content {
+    padding: 0;
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 1.8; }
+
+@media screen and (max-width: 768px) {
+  .profile-box {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .profile-box__texts {
+      width: calc(100% - 40px);
+      margin: -30px auto 0;
+      padding: 40px 30px; } }

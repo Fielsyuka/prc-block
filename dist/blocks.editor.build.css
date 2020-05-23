@@ -1,1 +1,25 @@
-.wp-block-cgb-block-cgb{color:#292929;background:#bada55;border:0.2rem solid #292929;padding:2rem}
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+.profile-box {
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .profile-box__texts {
+    width: calc(100% - 40px);
+    margin: -30px auto 0;
+    padding: 40px 30px; }
+  .profile-box__name-jp {
+    font-size: inherit; }
+  .profile-box__name-eng {
+    font-size: inherit; }
