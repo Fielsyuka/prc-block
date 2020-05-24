@@ -6,27 +6,28 @@
 
 .profile-box {
 	display: flex;
-	flex-direction: row-reverse;
-	flex-wrap: nowrap;
+	flex-direction: row;
+	flex-wrap: wrap;
 	align-items: center;
 	font-family: "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
 	&__image {
+		overflow: hidden; 
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 74%;
-		height: 360px;
+		width: 100%;
+		min-height: 248px;
     background-color: #f1f1f1;
     border: 1px solid #eee;
-		>img {
-			
+		>img {		
 	    width: 100%;
+	    max-height: 100%;
 	    object-fit: cover;
 		}
 	}
 	&__texts {
-		width: 48%;
-		margin-right: -14%;
+		width: calc(100% - 50px);
+		margin: -40px auto 0;
 		padding: 40px 50px;
 		background-color: #fff;
 		border: 1px solid #f9a156;
@@ -39,7 +40,6 @@
 	&__year {
 		width: 140px;
 		font-size: 12px;
-		/*font-weight: bold;*/
 	}
 	&__name {
 		display: flex;
@@ -55,6 +55,7 @@
 	}
 	&__name-eng {
 		display: inline-block;
+		margin: 0!important;
 		color: #9F9F92;
 		font-size: 12px;
 		font-weight: bold;
@@ -67,19 +68,21 @@
 	}
 	&__content {
 		padding: 0;
-		margin-top: 40px;
+		margin-top: 30px;
 		font-size: 14px;
 		line-height: 1.8;
+		> p {
+			margin: 0;
+		}
+		> p + p {
+			margin-top: 1em;
+		}
 	}
 }
 @media screen and (max-width:768px){
 	.profile-box {
-		flex-direction: row;
-		flex-wrap: wrap;
 		&__texts {
-			width: calc(100% - 40px);
-			margin: -30px auto 0;
-			padding: 40px 30px;
+			padding: 46px 30px;
 		}
 
 	}

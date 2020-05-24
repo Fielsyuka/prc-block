@@ -5,18 +5,19 @@
  * which makes it higher in priority.
  */
 
-.profile-box {
-	flex-direction: row;
-	flex-wrap: wrap;
-	&__texts {
-		width: calc(100% - 40px);
-		margin: -30px auto 0;
-		padding: 40px 30px;
+	.profile-box {
+		flex-direction: row;
+		flex-wrap: wrap;
+		&__texts {
+			padding: 40px 30px;
+		}
+		&__name-jp {
+			font-size: inherit;
+		}
+		&__name-eng {
+			font-size: inherit;
+		}
+		&__content > p:last-child {
+			margin-bottom: 0;
+		}
 	}
-	&__name-jp {
-		font-size: inherit;
-	}
-	&__name-eng {
-		font-size: inherit;
-	}
-}
